@@ -1,0 +1,23 @@
+body {
+  background-color: rgb(30, 30, 30);
+}
+
+.button {
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+}
+
+.num {
+  background-color: rgb(50, 50, 50);
+}
+
+.op {
+  background-color: rgb(252, 206, 28);
+  color: black;
+}
+
+.top3 {
+  background-color: rgb(117, 117, 117);
+  color: black;
+}
