@@ -1,11 +1,49 @@
 body {
   background-color: rgb(30, 30, 30);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#calc {
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+  height: 800px;
+  width: 500px;
+  border: 2px solid blue;
+}
+
+#display {
+  color: white;
+  border: 2px solid red;
+  text-align: right;
+  height: 50px;
+  width:400px;
+  padding: 20px;
+  margin: 50px 10px 25px 25px;
+  flex: 0;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex: 0;
 }
 
 .button {
   border-radius: 50%;
   text-align: center;
   color: white;
+  height: 75px;
+  width: 75px;
+  flex: 0 0 auto;
+}
+
+#eq {
+  width: 200px;
+  border-radius: 33%;
 }
 
 .num {
