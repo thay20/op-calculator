@@ -29,10 +29,11 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin: 5px 0px;
   flex: 0;
 }
 
-.button {
+button {
   border-radius: 50%;
   text-align: center;
   color: white;
@@ -44,6 +45,8 @@ body {
 #eq {
   width: 200px;
   border-radius: 33%;
+  background-color: rgb(252, 206, 28);
+  color: black;
 }
 
 .num {
@@ -52,6 +55,11 @@ body {
 
 .op {
   background-color: rgb(252, 206, 28);
+  color: black;
+}
+
+.op-down {
+  background-color: rgb(76, 249, 2);
   color: black;
 }
 
