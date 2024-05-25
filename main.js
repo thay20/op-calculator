@@ -2,6 +2,12 @@ function calculator() {
 
   function operate(firstNum, secondNum, op) {
     result = '';
+
+    let buttons = document.querySelectorAll(".op-down");
+    buttons.forEach(button => {
+      button.setAttribute("class", "op")
+    });
+
     if (!secondNum || !op) {
     } else {
       switch (true) {
@@ -38,11 +44,6 @@ function calculator() {
     (/[0-9.-]/g.test(result)) ? num1 = result : num1 = '';
 
     num2 = '';
-
-    let buttons = document.querySelectorAll(".op-down");
-    buttons.forEach(button => {
-      button.setAttribute("class", "op")
-    });
     }
   }
 
@@ -112,6 +113,12 @@ function calculator() {
         if (!num1) num1 = 0;
         op = e.target.id;
         input = '';
+
+        let buttons = document.querySelectorAll(".op-down");
+        buttons.forEach(button => {
+          button.setAttribute("class", "op")
+        });
+        
         e.target.setAttribute("class", "op-down");
       } else {
         num2 = input;
